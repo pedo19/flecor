@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+        text-decoration: none;
+    }
+
+    body{
+        background: #dddddd1c;
+    }
+
+    .erro-section{
+        padding: 60px 0px;
+    }
+
+    .erro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .erro-content {
+        /* background: #dddddd1c; */
+        width: 89%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+    }   
+
+    .erro-img{
+        width: 50%;
+    }
+
+    .erro-img img{
+        width: 100%;
+    }
+
+    .erro-button{
+        margin: 10px 0px 20px;
+    }
+
+    .erro-button .btn-erro {
+        background: #503c8b;
+        padding: 15px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .erro-button .btn-erro:hover:focus{
+        background: #503c8b2e;
+        color: #503c8b;
+        transition: .3s linear;
+    }
+
+    @media(max-width: 830px){
+        .erro-img {
+            width: 100%;
+        }
+
+        .erro{
+            height: 76vh;
+        }
+
+        .erro-content{
+            gap: 35px;
+        }
+
+        .erro-button .btn-erro {
+            background: #503c8b;
+            padding: 12px 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 15px;
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <section class="erro-section">
+        <div class="container">
+            <div class="erro">
+                <div class="erro-content">
+                    <div class="erro-img">
+                        <img src="img/erro.png" alt="">
+                    </div>
+                    <div class="erro-button">
+                        <a class="btn-erro" href="contacto.html">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

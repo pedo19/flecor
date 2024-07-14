@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flecor-comercial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-direction: column;
+}
+
+.splash-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecor-continuar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecor-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flecor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.flecor-img img{
+    width: 100%;
+}
+
+.flecor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecor-button .btn-continuar {
+    background: #176d91;
+    color: #fff;
+    padding: 15px 60px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.flecor-button .btn-continuar:hover{
+    background: #176c913b;
+    color: #176d91;
+}
+
+.splash-img img{
+    width: 40%;
+     object-fit: cover;
+    object-position: center;
+}
+
+.splash-icon-loanding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-icon-loanding img {
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#main-content {
+    display: none;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section.fleco-continuar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecor-continuar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+@media(max-width: 830px){
+    .flecor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78%;
+}
+
+.flecor-button .btn-continuar {
+    background: #176d91;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.flecor-img img {
+    width: 73%;
+}
+}
+</style>
+<body>
+    <div id="splash-screen">
+        <div class="splash-img">
+            <img src="img/splash.jpg" alt="">
+        </div>
+        <div class="splash-icon-loanding">
+            <img src="img/loanding.gif" alt="">
+        </div>
+    </div>
+
+    <section class="fleco-continuar-section">
+        <div class="container">
+            <div class="flecor-continuar">
+                <div class="flecor-continuar-content">
+                    <div class="flecor-row">
+                        <div class="flecor-img">
+                            <img src="img/splash.jpg" alt="">
+                        </div>
+                        <div class="flecor-button">
+                            <a class="btn-continuar" href="home.html">Continuar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="splash.js"></script>
+</body>
+</html>

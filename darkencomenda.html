@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos</title>
+    <link rel="stylesheet" href="darkstyle.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+         <div class="navbar">
+             <div class="logo">
+                 <div class="menu-btn" onclick="toggleMenu()">☰</div>
+                 <img src="img/logo.png" alt="">
+             </div>   
+             <div class="sidebar" id="sidebar">
+                <div class="remove">
+                    <button class="close-btn" onclick="closeMenu()">X</button>
+                </div>
+                <div class="link-bar">
+                     <a href="darkhome.html"> <i class="bi bi-house-fill"></i> Home</a>
+                     <a href="darkencomenda.html"><i class="bi bi-car-front-fill"></i> Encomendar</a>
+                     <a href="darkprodutos.html"><i class="bi bi-box-fill"></i> Produtos</a>
+                     <a href="darkcontacto.html"><i class="bi bi-telephone-fill"></i> Contacto</a>
+                </div>
+                <div class="divedi"></div>
+                <div class="link-bar">
+                    <a href="darkdefinicao.html"> <i class="bi bi-gear-fill"></i> Definicões</a>
+               </div>
+             </div>
+             <a href="darkcart.html" id="cart-link">
+                 <div class="carrinho">
+                     <i class="bi bi-bag-fill"></i>
+                     <span id="cart-count">0</span>
+                 </div>
+             </a>
+         </div>
+        </div>
+     </header>
+    <section class="encomenda-section">
+        <div class="container">
+            <div class="encomenda">
+                <div class="encomenda-content">
+                    <h1>Encomenda</h1>
+                    <form id="order-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+                
+                        <label for="address">Endereço:</label>
+                        <input type="text" id="address" name="address" placeholder="Digite o seu endereço" required>
+                
+                        <label for="product">Produto:</label>
+                        <input type="text" id="product" name="product" placeholder="Digite o produto" required>
+                
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="Digite a quantidade" required>
+                
+                        <button class="btn-whatsapp" type="button" id="submit-button">Enviar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="encomenda.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
